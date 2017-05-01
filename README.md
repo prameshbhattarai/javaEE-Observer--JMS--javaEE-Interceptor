@@ -20,8 +20,8 @@ Request method: __POST method__
 Request body:
     `{`  
         `"name": "Pramesh Bhattarai",`     
-        `"email": "pra4mesh@gmail.com",`     
-        `"contact": "9841953894"`     
+        `"email": "prameshbhattarai341@gmail.com",`     
+        `"contact": "9841XXXXXX"`     
     `}`        
 Response format: __JSON format__         
 API: (http://localhost:8080/JMS-web/api/callEvent)  
