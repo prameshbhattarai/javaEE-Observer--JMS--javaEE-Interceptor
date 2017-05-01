@@ -9,19 +9,19 @@ send to the provide address from client application using Gmail session.
 
 #### Requirements:             
 Create JDBC Resource as "__jdbc/jpaDatabase1__"            
-Create JMS Connection Factories resource as "__jms/__defaultConnectionFactory__"            
+Create JMS Connection Factories resource as "**jms/__defaultConnectionFactory**"            
 Create JMS Destination Resource as "__jms/emailQueue__"
 Set Gmail Authentication "__username__" and "__password__" in "__Authentication.properties__" file inside resources
 for more detail on Gmail SMTP: [Gmail SMTP](http://mail.google.com/support/bin/answer.py?hl=en&answer=13287)    
 
 #### Client API:          
 
-Request method: __POST method         
+Request method: __POST method__         
 Request body:
-    `{`
-        `"name": "Pramesh Bhattarai",`   
-        `"email": "pra4mesh@gmail.com",`   
-        `"contact": "9841953894"`   
+    `{`  
+        `"name": "Pramesh Bhattarai",`     
+        `"email": "pra4mesh@gmail.com",`     
+        `"contact": "9841953894"`     
     `}`        
-Response format: __JSON format         
+Response format: __JSON format__         
 API: (http://localhost:8080/JMS-web/api/callEvent)  
