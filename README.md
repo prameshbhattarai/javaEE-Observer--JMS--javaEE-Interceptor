@@ -10,8 +10,8 @@ send to the provide address from client application using Gmail session.
 #### Requirements:             
 Create JDBC Resource as "__jdbc/jpaDatabase1__"            
 Create JMS Connection Factories resource as "**jms/__defaultConnectionFactory**"            
-Create JMS Destination Resource as "__jms/emailQueue__"
-Set Gmail Authentication "__username__" and "__password__" in "__Authentication.properties__" file inside resources
+Create JMS Destination Resource as "__jms/emailQueue__"  
+Set Gmail Authentication "__username__" and "__password__" in "__Authentication.properties__" file inside resources  
 for more detail on Gmail SMTP: [Gmail SMTP](http://mail.google.com/support/bin/answer.py?hl=en&answer=13287)    
 
 #### Client API:          
