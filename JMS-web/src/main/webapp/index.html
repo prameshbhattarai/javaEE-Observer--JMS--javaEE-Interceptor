@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Start Page</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+        <body>
+        <h1>Implementation of JavaEE-Observer with integration of Java Message Service(JMS) and using Interceptor for Persistence Unit</h1><br><br>
+        
+        Scenario: <br>
+        Client application will invoke a api using POST method, JavaEE-Observer will observe the object <br>
+        and insert it into the database and same object is broadcast/sent to Queue resources of JMS. <br>
+        By using the Message Listener of JMS, object from Queue resource is listen and Email is <br>
+        send to the provide address from client application using Gmail session. <br/><br/>
+
+        Requirements: <br>
+        Create JDBC Resource as "jdbc/jpaDatabase1"<br/>
+        Create JMS Connection Factories resource as "jms/__defaultConnectionFactory"<br/>
+        Create JMS Destination Resource as "jms/emailQueue"<br/><br/>
+        
+        Client API: <br/>
+        
+        Request method: <b>POST method</b><br/>
+        Request body: <code>
+            {
+                "name": "Pramesh Bhattarai", 
+                "email": "pra4mesh@gmail.com",
+                "contact": "9841953894"
+            }</code><br/>
+        Response format: <b>JSON format</b><br/>
+        API: <b>http://localhost:8080/JMS-web/api/callEvent</b><br/><br/>
+    </body>
+</html>
